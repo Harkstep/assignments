@@ -6,35 +6,34 @@ user_pin = '1234'
 max_tries = 3
 
 
+                                                                        # This sets a loop to repeat while there are
+while max_tries > 0:                                                     # more than 0 attempts left
+    if input('Enter your pin: ') == user_pin:                            # This states if input(pin attempt) is equal to
+        print('Pin Correct')                                             # the user pin the print statement applies
+        break                                                            # This ends the loop if statement True
+    else:                                                                # else continues instructions if False
+        max_tries -= 1                                                   # This counts down one from set variable
+        print('Your pin is incorrect,', max_tries, 'tries remaining')    # output is strings + changing variable
+        if max_tries == 0:                                               # This statement only triggers a second output
+             print('Your card has been retained')                        # stating what happens now no more tries
 
-                                                                         # This sets a loop to repeat while there are
-# while max_tries > 0:                                                     # more than 0 attempts left
-#     if input('Enter your pin: ') == user_pin:                            # This states if input(pin attempt) is equal to
-#         print('Pin Correct')                                             # the user pin the print statement applies
-#         break                                                            # This ends the loop if statement True
-#     else:                                                                # else continues instructions if False
-#         max_tries -= 1                                                   # This counts down one from set variable
-#         print('Your pin is incorrect,', max_tries, 'tries remaining')    # output is strings + changing variable
-#         if max_tries == 0:                                               # This statement only triggers a second output
-#              print('Your card has been retained')                        # stating what happens now no more tries
-
-
-
-
-
-#Ex10  Q3 Optional extra
-
-import getpass
-
-user_pin = '1234'
-max_tries = 3
-
-while max_tries > 0:
-    if getpass.getpass('Enter your pin: ') == user_pin:              # The getpass.getpass input hides the entries
-        print('Correct')                                             # on the screen inputs
-        break
-    else:
-        max_tries -= 1
-        print('Your pin is incorrect,', max_tries, 'tries remaining')
-if max_tries == 0:
-    print('Your card has been retained')
+#
+#
+#
+#
+# #Ex10  Q3 Optional extra
+#
+# import getpass
+#
+# user_pin = '1234'
+# max_tries = 3
+#
+# while max_tries > 0:
+#     if getpass.getpass('Enter your pin: ') == user_pin:              # The getpass.getpass input hides the entries
+#         print('Correct')                                             # on the screen inputs
+#         break
+#     else:
+#         max_tries -= 1
+#         print('Your pin is incorrect,', max_tries, 'tries remaining')
+# if max_tries == 0:
+#     print('Your card has been retained')
