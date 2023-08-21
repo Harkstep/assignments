@@ -11,23 +11,23 @@ def rock_paper_scissors():
     print('Welcome to Rock(R) Paper(P) Scissors(S)!')
     user_input = input('To play please type R,P or S here ')
 
-    if user_input.upper() == 'R':                                 # This sets the user input to the variable above
-        print('You have selected', r)                             # the .upper means input can take upper and lower
-    elif user_input.upper() == 'P':                               # args as it converts all to upper
+    if user_input.upper() == 'R':               # This sets the user input to the variable above
+        print('You have selected', r)           # the .upper means input can take upper and lower
+    elif user_input.upper() == 'P':                          # args as it converts all to upper
         print('You have selected', p)
     elif user_input.upper() == 'S':
         print('You have selected', s)
     else:
-        print('Invalid input. Please try again.')       # This line lets user know if they put in the wrong parameters
+        print('Invalid input. Please try again.')       # This line lets user know if they put                                                 # in the wrong parameters
 
 # Asks the computer to generate a random value between 0 and 2
-    import random                                                       # had we used dictionary to store our values we
-    r_num = random.randint(0, 2)                                        # could've used random.choice to pick random str
-#                                                                #instructions asked for int (0,2) so found this easier
+    import random                          # had we used dictionary to store our values we
+    r_num = random.randint(0, 2)           # could've used random.choice to pick random str
+#                                          #instructions asked for int (0,2) so found this easier
 
     # Convert computers choice, 0 becomes Rock; 1 becomes Paper ; 2 becomes Scissors respectively
-    comp_choice = rps_list[r_num]                                          # converts rand int into str from above list
-    print('Computer has guessed ' + comp_choice)                           # ie. r_num in list into comp_choice
+    comp_choice = rps_list[r_num]                    # converts rand int into str from above list
+    print('Computer has guessed ' + comp_choice)     # ie. r_num in list into comp_choice
 
 
 # Compare the users choice with the computers choice to display message indicating whether user won,lost, or drew
@@ -70,3 +70,4 @@ rock_paper_scissors()
 
 # showcase what you have learnt and create your own functions
 # See Rock_paper_scissor file
+from itertools import combinations_with_replacement
