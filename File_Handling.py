@@ -1,18 +1,15 @@
 ## Basic Try-Except Block
 
-
-
-
 try:
-  f = open("file.txt")
-  try:
-    f.read("file.txt")
-  except:
-    print("Something went wrong when reading the file")
-  finally:
-    f.close()
+    f = open("file.txt")
+    try:
+        f.read("file.txt")
+    except:
+        print("Something went wrong when reading the file")
+    finally:
+        f.close()
 except:
-print("Something went wrong when opening the file")
+    print("Something went wrong when opening the file")
 
 
 def nameAge(name, age):
@@ -29,4 +26,3 @@ except ValueError:
     print('Invalid age')
 finally:
     result = nameAge(name, age)
-
